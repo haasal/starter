@@ -19,4 +19,19 @@ return {
   -- formatters
   { import = "lazyvim.plugins.extras.formatting.black" },
   { import = "lazyvim.plugins.extras.formatting.prettier" },
+
+  -- add more treesitter parsers
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "bash",
+        "html",
+        "javascript",
+        "lua",
+        "regex",
+        "css",
+      },
+    },
+  },
 }
