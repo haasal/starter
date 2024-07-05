@@ -6,12 +6,15 @@ return {
   { import = "lazyvim.plugins.extras.lang.docker" },
   { import = "lazyvim.plugins.extras.lang.python" },
   { import = "lazyvim.plugins.extras.lang.yaml" },
+  { import = "lazyvim.plugins.extras.lang.nushell" },
+  { import = "lazyvim.plugins.extras.lang.typescript" },
 
   -- Load some extras
   { import = "lazyvim.plugins.extras.coding.mini-surround" },
   { import = "lazyvim.plugins.extras.editor.leap" },
   { import = "lazyvim.plugins.extras.editor.fzf" },
   { import = "lazyvim.plugins.extras.util.dot" },
+  { import = "lazyvim.plugins.extras.editor.refactoring" },
 
   -- vscode support
   { import = "lazyvim.plugins.extras.vscode" },
