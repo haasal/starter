@@ -15,6 +15,7 @@ return {
   { import = "lazyvim.plugins.extras.editor.fzf" },
   { import = "lazyvim.plugins.extras.util.dot" },
   { import = "lazyvim.plugins.extras.editor.refactoring" },
+  { import = "lazyvim.plugins.extras.coding.yanky" },
 
   -- vscode support
   { import = "lazyvim.plugins.extras.vscode" },
