@@ -8,6 +8,7 @@ return {
   { import = "lazyvim.plugins.extras.lang.yaml" },
   { import = "lazyvim.plugins.extras.lang.nushell" },
   { import = "lazyvim.plugins.extras.lang.typescript" },
+  { import = "lazyvim.plugins.extras.lang.rust" },
 
   -- Load some extras
   { import = "lazyvim.plugins.extras.coding.mini-surround" },
@@ -29,12 +30,23 @@ return {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
+        "rust",
         "bash",
         "html",
         "javascript",
         "lua",
         "regex",
         "css",
+      },
+    },
+  },
+
+  -- Force default Mason packages
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "rust-analyzer",
       },
     },
   },
