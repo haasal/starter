@@ -17,6 +17,7 @@ return {
   { import = "lazyvim.plugins.extras.util.dot" },
   { import = "lazyvim.plugins.extras.editor.refactoring" },
   { import = "lazyvim.plugins.extras.coding.yanky" },
+  { import = "lazyvim.plugins.extras.coding.mini-comment" },
 
   -- vscode support
   { import = "lazyvim.plugins.extras.vscode" },
@@ -42,12 +43,12 @@ return {
   },
 
   -- Force default Mason packages
-  {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "rust-analyzer",
-      },
-    },
-  },
+  -- {
+  --   "williamboman/mason.nvim",
+  --   opts = {
+  --     ensure_installed = {
+  --       "rust-analyzer",
+  --     },
+  --   },
+  -- },
 }
