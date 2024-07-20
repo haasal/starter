@@ -7,17 +7,22 @@ return {
   { import = "lazyvim.plugins.extras.lang.python" },
   { import = "lazyvim.plugins.extras.lang.yaml" },
   { import = "lazyvim.plugins.extras.lang.nushell" },
-  { import = "lazyvim.plugins.extras.lang.typescript" },
-  { import = "lazyvim.plugins.extras.lang.rust" },
+  { import = "lazyvim.plugins.extras.lang.rust" }, -- Install rust-analyzer using `$ rustup component add rust-analyzer`
 
   -- Load some extras
-  { import = "lazyvim.plugins.extras.coding.mini-surround" },
-  { import = "lazyvim.plugins.extras.editor.leap" },
-  { import = "lazyvim.plugins.extras.editor.fzf" },
-  { import = "lazyvim.plugins.extras.util.dot" },
+  { import = "lazyvim.plugins.extras.coding.mini-surround" }, -- gz... for surrounding text
+  { import = "lazyvim.plugins.extras.editor.leap" }, -- S for searching
+  { import = "lazyvim.plugins.extras.editor.fzf" }, -- Depends on fzf `spm -S fzf`
+  { import = "lazyvim.plugins.extras.util.dot" }, -- dotfile support
   { import = "lazyvim.plugins.extras.editor.refactoring" },
-  { import = "lazyvim.plugins.extras.coding.yanky" },
-  { import = "lazyvim.plugins.extras.coding.mini-comment" },
+  { import = "lazyvim.plugins.extras.coding.yanky" }, -- Yanking keychain etc.
+  { import = "lazyvim.plugins.extras.coding.mini-comment" }, -- gcc, gc for commenting
+  { import = "lazyvim.plugins.extras.editor.aerial" }, -- Symbol browser
+  { import = "lazyvim.plugins.extras.test.core" }, -- Testing
+  { import = "lazyvim.plugins.extras.dap.core" }, -- Debugger
+  { import = "lazyvim.plugins.extras.util.project" }, -- Project interface/manager
+  { import = "lazyvim.plugins.extras.util.rest" }, -- Rest client (http files)
+  { import = "lazyvim.plugins.extras.editor.illuminate" }, -- Highlight symbol under cursor
 
   -- vscode support
   { import = "lazyvim.plugins.extras.vscode" },
@@ -31,7 +36,6 @@ return {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
-        "rust",
         "bash",
         "html",
         "javascript",
