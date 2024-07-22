@@ -23,6 +23,7 @@ return {
   { import = "lazyvim.plugins.extras.util.project" }, -- Project interface/manager
   { import = "lazyvim.plugins.extras.util.rest" }, -- Rest client (http files)
   { import = "lazyvim.plugins.extras.editor.illuminate" }, -- Highlight symbol under cursor
+  { import = "lazyvim.plugins.extras.ui.treesitter-context" }, -- Display current function context at the top
 
   -- vscode support
   { import = "lazyvim.plugins.extras.vscode" },
@@ -45,14 +46,4 @@ return {
       },
     },
   },
-
-  -- Force default Mason packages
-  -- {
-  --   "williamboman/mason.nvim",
-  --   opts = {
-  --     ensure_installed = {
-  --       "rust-analyzer",
-  --     },
-  --   },
-  -- },
 }
